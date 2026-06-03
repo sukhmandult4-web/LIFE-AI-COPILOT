@@ -1,20 +1,8 @@
-# ============================================================
-#   🤖 LIFE COPILOT - Your Daily Helper!
-#   Made simple so EVERYONE can understand it!
-#
-#   WHAT IT CAN DO:
-#   1. Add tasks (things you need to do)
-#   2. Show all your tasks
-#   3. Mark a task as DONE
-#   4. Set a reminder (it will beep and show a message!)
-#   5. Make a shopping list from a meal name
-#   6. Get a motivational quote to cheer you up
-#   7. Check the weather (just for fun!)
-#   8. Ask the AI anything!
-#
-#   HOW TO INSTALL (type this in your VS Code terminal):
-#   pip install pyttsx3 requests schedule
-# ============================================================
+#   Sukhman's Daily Helper
+# My Life Copilot - by Sukhman
+# A simple daily helper I built in Python!
+
+
 
 import time       # For checking time and waiting
 import datetime   # For getting today's date
@@ -22,7 +10,7 @@ import random     # For picking random quotes
 import json       # For saving/loading tasks to a file
 import os         # For checking if a file exists
 
-# ── Try to import extra libraries ──────────────────────────
+
 try:
     import pyttsx3          # Makes the computer SPEAK
     speech_available = True
@@ -37,10 +25,7 @@ except:
     internet_available = False
     print("💡 Tip: Run 'pip install requests' to enable weather!")
 
-# ============================================================
-#   STEP 1 — SPEAKING FUNCTION
-#   This makes the computer talk to you!
-# ============================================================
+# --- Speaking ---
 
 def speak(text):
     """Make the computer say something out loud"""
@@ -54,10 +39,7 @@ def speak(text):
         except:
             pass  # If speaking fails, no problem — it was already printed
 
-# ============================================================
-#   STEP 2 — TASKS (Things You Need To Do)
-#   Tasks are saved in a file so you don't lose them!
-# ============================================================
+# --- Tasks ---
 
 TASKS_FILE = "my_tasks.json"   # Name of the file where tasks are saved
 
@@ -139,10 +121,7 @@ def delete_done_tasks():
     save_tasks(tasks)
     speak("All finished tasks have been removed!")
 
-# ============================================================
-#   STEP 3 — REMINDERS
-#   Set a reminder and the computer will alert you!
-# ============================================================
+# --- Reminders ---
 
 def set_reminder():
     """Set a reminder for a specific time today"""
@@ -166,10 +145,7 @@ def set_reminder():
         print(f"  ⏳ Current time: {now} | Waiting for {remind_time}...")
         time.sleep(30)  # Wait 30 seconds before checking again
 
-# ============================================================
-#   STEP 4 — SHOPPING LIST FROM A MEAL
-#   Tell it what you want to eat and it makes a list!
-# ============================================================
+#SHOPPING LIST
 
 # Dictionary of meals and their ingredients
 MEAL_INGREDIENTS = {
@@ -207,10 +183,8 @@ def make_shopping_list():
         print("   Meals I know:", ", ".join(MEAL_INGREDIENTS.keys()))
         speak("I don't know that meal yet, but you can add it to my list!")
 
-# ============================================================
-#   STEP 5 — MOTIVATIONAL QUOTES
-#   Get a random quote to cheer you up!
-# ============================================================
+
+# QUOTES
 
 QUOTES = [
     "Believe you can and you're halfway there! 💪",
@@ -233,10 +207,7 @@ def get_quote():
     print("─" * 40 + "\n")
     speak(quote)
 
-# ============================================================
-#   STEP 6 — WEATHER (Needs internet!)
-#   Shows simple weather for your city
-# ============================================================
+# wEATHER
 
 def check_weather():
     """Get current weather for a city"""
@@ -264,10 +235,7 @@ def check_weather():
     except:
         print("❌ No internet connection or city not found!")
 
-# ============================================================
-#   STEP 7 — DAILY SUMMARY
-#   Shows how many tasks you have and a quote!
-# ============================================================
+#SUMMARY
 
 def daily_summary():
     """Show a summary of your day"""
@@ -294,9 +262,7 @@ def daily_summary():
 
     get_quote()   # Also show a motivational quote
 
-# ============================================================
-#   MAIN MENU — This is where the program starts!
-# ============================================================
+#PROGRAM STRT
 
 def show_menu():
     """Show the main menu"""
@@ -317,7 +283,7 @@ def show_menu():
 
 def main():
     """Main function — runs the whole program"""
-    speak("Hello! Welcome to Life Copilot! I am here to help you!")
+    speak("Hey! Sukhman's helper is ready!")
 
     # Keep running until user types 0
     while True:
@@ -360,6 +326,6 @@ def main():
 
         input("\n  Press ENTER to go back to menu...")   # Wait before showing menu again
 
-# ── This line starts the program! ──────────────────────────
+
 if __name__ == "__main__":
     main()
