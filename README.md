@@ -44,7 +44,7 @@ The project stores tasks locally using JSON and can also read information from t
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repo
 ```bash
@@ -64,7 +64,7 @@ python3 main.py
 
 ---
 
-## 📦 Libraries Used
+## Libraries Used
 
 | Library | Purpose | Install |
 |---------|---------|---------|
@@ -92,37 +92,7 @@ While building this project, I practiced:
 ## 🛒 Meals Supported for Shopping List
 
 `pasta` `pizza` `sandwich` `fried rice` `omelette` `soup` `salad` `pancakes` `maggi` `dal rice` `paratha` `poha`
-
----
-
-## 💡 Tips
-
-- Tasks are **saved automatically** in `my_tasks.json` so you never lose them
-- The computer **speaks every action** out loud using your Mac/PC speakers
-- Weather works for **any city in the world** — try `Mumbai`, `London`, `New York`
-- Keep the program running for **reminders** to work
-
----
-
-## 🐛 Troubleshooting
-
-**`zsh: command not found: python`**
-→ Use `python3` instead of `python` on Mac
-
-**`ModuleNotFoundError`**
-→ Run `pip3 install pyttsx3 requests --break-system-packages`
-
-**Voice not working on Linux**
-→ Run `sudo apt-get install espeak`
-
-**Voice not working on Windows**
-→ Run `pip install pywin32`
-
----
-
-## 👨‍💻 Made By
-
-**sukhmandult4-web**  
+ 
 ## Author
 
 Sukhman Singh
@@ -134,7 +104,7 @@ GitHub: https://github.com/sukhmandult4-web
 
 ---
 
-## 📄 License
+## License
 
 MIT License — free to use, modify and share!
 
