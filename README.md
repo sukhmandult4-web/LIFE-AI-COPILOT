@@ -1,6 +1,5 @@
 # LIFE AI COPILOT
-
-#A command-line productivity assistant built in Python.
+A command-line productivity assistant built in Python.
 
 I created this project while learning Python to practice working with functions, file handling, APIs, and external libraries. The application helps manage daily tasks, set reminders, check weather, generate shopping lists, and provide motivational quotes through a simple menu-driven interface.
 
@@ -10,7 +9,7 @@ The project stores tasks locally using JSON and can also read information from t
 ![Platform](https://img.shields.io/badge/Platform-Mac%20%7C%20Windows%20%7C%20Linux-lightgrey?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
----
+
 
 ## Screenshots
 
