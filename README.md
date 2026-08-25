@@ -9,6 +9,7 @@ The project stores tasks locally using JSON and can also read information from t
 ![Platform](https://img.shields.io/badge/Platform-Mac%20%7C%20Windows%20%7C%20Linux-lightgrey?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
+---
 
 
 ## Screenshots
