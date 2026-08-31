@@ -115,3 +115,5 @@ MIT License — free to use, modify and share!
 - AI-powered task suggestions
 - GUI version using Tkinter or PyQt
 - Voice command support
+
+---
